@@ -1,0 +1,145 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: cursive;
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*---------Nav---------*/
+#main-doc {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+
+}
+
+#navbar header {
+    color: black;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#navbar ul {
+    padding: 20px;
+    font-size: 20px;
+    overflow-y: scroll;
+    width: 100%;
+    height: 300px;
+}
+
+#navbar ul li {
+    color: black;
+    border-top: 1px solid;
+    padding: 10px;
+    text-align: left;
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #4d4e53;
+}
+
+/*---------main content--------*/
+.header {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: black;
+}
+
+#all {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+#all ul li {
+    margin-left: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+p {
+    line-height: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#all ul ul li {
+    margin-left: 140px;
+}
+
+#all code {
+    margin-left: 50px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: whitesmoke;
+    padding-left: 40px;
+}
+
+/*--------Media query----------*/
+
+@media(min-width:900px) {
+    #main-doc {
+        flex-direction: row;
+    }
+
+    #navbar {
+        width: 350px;
+        height: 100vh;
+        background-color: white;
+        text-align: left;
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        border-right: 2px solid gray;
+
+    }
+
+    #all {
+        margin-left: 350px;
+    }
+
+    #navbar header {
+        margin-left: 50px;
+        margin-top: 10px;
+
+
+    }
+
+    #navbar ul {
+        height: 400px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #navbar ul li a {
+        margin-left: 30px;
+    }
+
+}
